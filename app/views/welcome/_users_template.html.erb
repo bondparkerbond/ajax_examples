@@ -1,0 +1,12 @@
+<li>
+  <a class="user_item" href="<%= @id %>"><%= @name %></a>
+  <form data-user_id="<%= @id %>" class='hide edit-form'>
+    <input name='user[first_name]' data-user_name="<%= @name %>" value="<%= @name %>" />
+    <button class='reset' type='button'>Reset</button>
+    <button type='submit'>Save</button>
+  </form>
+  <br />
+  <button class="user_edit" data-user_name="<%= @name %>" >Edit</button>
+  -
+  <button class="user_delete">Delete</button>
+</li>

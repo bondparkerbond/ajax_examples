@@ -1,0 +1,27 @@
+<h1>Users</h1>
+<div id="message_div" class="hide red-text"></div>
+
+<form id="create_user_form" action="/users" method="POST">
+  <label for="user_first_name">First Name: </label>
+  <input type="text" id="user_first_name" name="user[first_name]" />
+  <br />
+
+  <label for="user_last_name">Last Name: </label>
+  <input type="text" id="user_last_name" name="user[last_name]" />
+  <br />
+
+  <label for="user_phone_number">Phone number: </label>
+  <input type="text" id="user_phone_number" name="user[phone_number]" />
+  <br />
+
+  <input type="submit" id="user_add_button" value="Add User" />
+</form>
+
+<hr />
+<ul id="users_list" class="left">
+</ul>
+
+<div class="right">
+  <h3 id="user_name"></h3>
+  <i id="user_phone"></i>
+</div>
